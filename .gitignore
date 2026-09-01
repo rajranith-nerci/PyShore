@@ -1,0 +1,40 @@
+# Secrets — never commit
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environments
+.env
+venv/
+clean_geo/
+
+# GEE credentials
+*.json
+!example_service_account.json
+
+# Outputs
+output/
+_tmp/
+_manual_upload/
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+*.gpkg
+*.csv
+PyShore_output/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
