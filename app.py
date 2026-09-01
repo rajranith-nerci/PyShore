@@ -68,7 +68,7 @@ with st.sidebar:
     st.subheader("📁 Baseline & Transects")
     baseline_shp = st.text_input(
         "Baseline shapefile",
-        value="D:/Paper works Working 2025/2015/shoreline_2015.shp",
+        value="",
         help="Shoreline used to generate perpendicular transects"
     )
     col3, col4 = st.columns(2)
@@ -354,9 +354,9 @@ if mode == "🛰️ GEE Extraction":
         end_year     = col_g4.number_input("End year",   value=2023, min_value=1985, max_value=2024)
         cloud_thresh = col_g5.slider("Max cloud %", 5, 50, 20)
         shoreline_dir = st.text_input("Shoreline output folder",
-                                       value="D:/Paper works Working 2025/shoreline_output")
+                                       value="shoreline_output")
         aoi_shp = st.text_input("AOI shapefile (leave blank to auto-derive from baseline)",
-                                 value="D:/Paper works Working 2025/Shorelina_AOI/aoi.shp")
+                                 value="")
         run_extraction = st.checkbox("Re-run GEE extraction", value=False,
                                       help="Uncheck to reuse existing shapefiles")
 
