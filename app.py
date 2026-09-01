@@ -372,6 +372,7 @@ if mode == "🛰️ GEE Extraction":
         status   = st.empty()
 
         try:
+            os.makedirs(shoreline_dir, exist_ok=True)
             cfg = PyShoreConfig(
                 extraction=ExtractionConfig(
                     start_year=int(start_year), end_year=int(end_year),
